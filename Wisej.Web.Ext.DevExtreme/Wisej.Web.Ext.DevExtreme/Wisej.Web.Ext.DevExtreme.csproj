@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5242282D-5AC6-4BC4-B28D-25C5B573ABA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wisej.Web.Ext.DevExtreme</RootNamespace>
+    <AssemblyName>Wisej.Web.Ext.DevExtreme</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Wisej.Web.Ext.DevExtreme.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Wisej.Web.Ext.DevExtreme.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>extension.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Wisej.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=17bef35e11b84171, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Development\2.2\bin\Wisej.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxBullet.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxCircularGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxDateBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxDiagram.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxDropDownBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxFileManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxFilterBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxFunnel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxGallery.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxGantt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxHtmlEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxLinearGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxLookup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxNavBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxPieChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxPivotGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxPivotGridFieldChooser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxPolarChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxRangeSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxRangeSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxSanKey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxScheduler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxSlideOut.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxSparkline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxSpeedDialAction.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxTileView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxToolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxTreeList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxTreeMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dxTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Platform\wisej.web.ext.DevExtremeWidget.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-300.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-300.woff" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-300.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-400.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-400.woff" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-400.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-500.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-500.woff" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-500.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-700.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-700.woff" />
+    <EmbeddedResource Include="DevExtreme\css\fonts\Roboto-700.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxicons.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxicons.woff" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxicons.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsios.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsios.woff" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsios.woff2" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsmaterial.ttf" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsmaterial.woff" />
+    <EmbeddedResource Include="DevExtreme\css\icons\dxiconsmaterial.woff2" />
+    <None Include="extension.snk" />
+    <None Include="itg.licenseheader" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dxDevExtreme.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\css\dx-diagram.min.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx-gantt.min.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.carmine.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.carmine.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.common.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.contrast.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.contrast.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.darkmoon.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.darkmoon.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.darkviolet.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.darkviolet.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.greenmist.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.greenmist.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.ios7.default.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.blue.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.blue.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.blue.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.blue.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.lime.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.lime.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.lime.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.lime.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.orange.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.orange.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.orange.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.orange.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.purple.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.purple.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.purple.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.purple.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.teal.dark.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.teal.dark.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.teal.light.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.material.teal.light.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.softblue.compact.css" />
+    <EmbeddedResource Include="DevExtreme\css\dx.softblue.css" />
+    <EmbeddedResource Include="DevExtreme\js\dx.all.js" />
+    <EmbeddedResource Include="DevExtreme\js\cldr\event.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\cldr\supplemental.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\cldr\unresolved.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\globalize\currency.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\globalize\date.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\globalize\message.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\globalize\number.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\jquery.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.cs.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.de.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.el.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.en.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.es.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.fi.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.fr.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.hu.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.it.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.ja.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.nl.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.pt.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.ru.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.sl.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.sv.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.tr.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.vi.js" />
+    <EmbeddedResource Include="DevExtreme\js\localization\dx.messages.zh.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dxCircularGauge.js">
+      <DependentUpon>dxCircularGauge.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="dxChart.js">
+      <DependentUpon>dxChart.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\dx-diagram.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\dx-gantt.min.js" />
+    <EmbeddedResource Include="DevExtreme\js\quill.min.js" />
+    <EmbeddedResource Include="DevExtreme\css\quill.snow.css" />
+    <EmbeddedResource Include="dxBullet.js">
+      <DependentUpon>dxBullet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxCalendar.js">
+      <DependentUpon>dxCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxColorBox.js">
+      <DependentUpon>dxColorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDataGrid.js">
+      <DependentUpon>dxDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDateBox.js">
+      <DependentUpon>dxDateBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDiagram.js">
+      <DependentUpon>dxDiagram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDropDownBox.js">
+      <DependentUpon>dxDropDownBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxDropDownButton.js">
+      <DependentUpon>dxDropDownButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFileManager.js">
+      <DependentUpon>dxFileManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFilterBuilder.js">
+      <DependentUpon>dxFilterBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxForm.js">
+      <DependentUpon>dxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxFunnel.js">
+      <DependentUpon>dxFunnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxGallery.js">
+      <DependentUpon>dxGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxGantt.js">
+      <DependentUpon>dxGantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxHtmlEditor.js">
+      <DependentUpon>dxHtmlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxLinearGauage.js">
+      <DependentUpon>dxLinearGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxList.js">
+      <DependentUpon>dxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxLookup.js">
+      <DependentUpon>dxLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxMap.js">
+      <DependentUpon>dxMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxMenu.js">
+      <DependentUpon>dxMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxNavBar.js">
+      <DependentUpon>dxNavBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPieChart.js">
+      <DependentUpon>dxPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPivotGrid.js">
+      <DependentUpon>dxPivotGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPivotGridFieldChooser.js">
+      <DependentUpon>dxPivotGridFieldChooser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxPolarChart.js">
+      <DependentUpon>dxPolarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxProgressBar.js">
+      <DependentUpon>dxProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxRangeSelector.js">
+      <DependentUpon>dxRangeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxRangeSlider.js">
+      <DependentUpon>dxRangeSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSankey.js">
+      <DependentUpon>dxSanKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxScheduler.js">
+      <DependentUpon>dxScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSlideOut.js">
+      <DependentUpon>dxSlideOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSparkline.js">
+      <DependentUpon>dxSparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSpeedDialAction.js">
+      <DependentUpon>dxSpeedDialAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxSwitch.js">
+      <DependentUpon>dxSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTileView.js">
+      <DependentUpon>dxTileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxToolbar.js">
+      <DependentUpon>dxToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeList.js">
+      <DependentUpon>dxTreeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeMap.js">
+      <DependentUpon>dxTreeMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dxTreeView.js">
+      <DependentUpon>dxTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DevExtreme\js\jszip.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(ProjectDir)..\..\bin"
+copy "$(TargetPath)" "$(ProjectDir)..\..\bin\" /y
+copy "$(TargetDir)$(TargetName).xml" "$(ProjectDir)..\..\bin\" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>
